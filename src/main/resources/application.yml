@@ -1,0 +1,7 @@
+security:
+    oauth2:
+        resource:
+          prefer-token-info: ${OAUTH2_RESOURCE_PREFER_TOKEN_INFO:false}
+          user-info-uri: https://[Cognito-Pool-Name].[region].amazoncognito.com/oauth2/userInfo
+          jwk:
+            key-set-uri: https://cognito-idp.[region].amazonaws.com/[Pool-Id]/.well-known/jwks.json
